@@ -1,0 +1,85 @@
+.center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex: 1 1 auto;
+}
+.wyname {
+  border: 0;
+  text-align: center;
+  border-bottom: 2px solid rgba(247, 244, 244, 1);
+  font-size: 20px;
+  line-height: 1.2;
+  font-weight: 500;
+  font-size: 40px;
+  color: white;
+}
+.js-clock {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 165px;
+  font-weight: 500px;
+}
+
+.center-below {
+  height: 296.5px;
+}
+
+.main-focus {
+  height: 133px;
+  display: flex;
+  justify-content: center;
+  cursor: default;
+  font-size: 2.1875em;
+  font-weight: 400;
+  user-select: none;
+  margin: 0;
+  line-height: normal;
+}
+
+.edit-focus {
+  margin-top: 90px;
+  box-sizing: border-box;
+  font-size: 30px;
+}
+
+.edit-focus input:not([type="sumbit"]) {
+  width: 100%;
+  border: 0;
+  text-align: center;
+  border-bottom: 2px solid rgba(247, 244, 244, 1);
+  font-size: 20px;
+  line-height: 1.2;
+  font-weight: 500;
+  font-size: 1.17em;
+}
+
+#your-list {
+  cursor: text;
+  color: white;
+}
+
+.edit-focus h3 {
+  display: block;
+  font-size: 1.17em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-weight: 400;
+}
+
+.form,
+.greetings {
+  display: none;
+}
+
+.showing {
+  display: block;
+}
+
+.showing {
+  display: table-cell;
+  text-align: center;
+  margin-top: 5px;
+  font-size: 54px;
+}

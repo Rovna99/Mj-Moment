@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="kr">
+  <head>
+    <link rel="stylesheet" href="css/style.css" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>You can Do it! Go for it!</title>
+  </head>
+  <body>
+    <div id="main-view" style="display: block">
+      <div class="region full">
+        <div class="part-top">
+          <div class="part-top-left">
+            <div class="part-top-menu">
+              <span class="menubar">Todo</span>
+            </div>
+            <i class="fas fa-search"></i>
+            <form
+              action="https://www.google.com/search?"
+              method="GET"
+              class="part-top-search"
+            >
+              <div class="search-google">
+                <input name="q" id="search-input" type="text" />
+              </div>
+            </form>
+            <img src="images/wgicon.png" class="icon-google part-top-search" />
+          </div>
+          <div class="part-top-right">
+            <div class="part-top-music">
+              <i class="fas fa-music"></i>
+            </div>
+            <div class="part-top-sitebar">site</div>
+            <div class="part-top-weather">weather</div>
+          </div>
+        </div>
+      </div>
+      <div class="region center-above"></div>
+      <div class="region center">
+        <div class="js-clock">
+          <h1>00:00</h1>
+        </div>
+        <form class="js-form form">
+          <h3>What is your name?</h3>
+          <input type="text" class="wyname" />
+        </form>
+        <h4 class="js-greetings greetings"></h4>
+      </div>
+      <div class="reion center-below">
+        <div class="main-focus">
+          <form class="edit-focus">
+            <h3>What is your main focus for today?</h3>
+            <input id="your-list" type="text" />
+            <h4 class="focus-list"></h4>
+          </form>
+        </div>
+      </div>
+    </div>
+    <script src="js/clock.js"></script>
+    <script src="js/bg.js"></script>
+    <script src="js/gretting.js"></script>
+    <script src="js/mainfocus.js"></script>
+    <script src="js/weather.js"></script>
+    <script
+      src="https://kit.fontawesome.com/6478f529f2.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

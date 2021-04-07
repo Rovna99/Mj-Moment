@@ -1,0 +1,83 @@
+.part-top {
+  height: 60px;
+  display: flex;
+  align-items: flex-start;
+  flex: 0 0 auto;
+}
+
+.part-top-left,
+.part-top-right {
+  box-sizing: border-box;
+}
+
+.part-top-right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 20px;
+}
+
+.part-top-left {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 15px;
+}
+
+.part-top-menu,
+.part-top-music,
+.part-top-sitebar {
+  margin-right: 10px;
+}
+
+.fa-search {
+  position: relative;
+  bottom: 1.2px;
+  left: 8.2px;
+}
+/* #search-input {
+  position: fixed;
+  margin-left: 10px;
+  cursor: pointer;
+  border: 0;
+  text-align: center;
+  border-bottom: 2px solid rgba(247, 244, 244, 1);
+} */
+
+#search-input {
+  width: 160px;
+  position: relative;
+  background: none;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  line-height: 20px;
+  outline: none;
+  border-bottom: 2px solid rgba(247, 244, 244, 1);
+  right: 7px;
+  top: 5px;
+  padding: 0 32px 8px 26px;
+}
+
+.menubar {
+  display: flex;
+  box-sizing: inherit;
+  width: 60px;
+  height: 30px;
+  background-color: rgb(144, 195, 230);
+  border-radius: 20px;
+  justify-content: center;
+  align-items: center;
+}
+
+.icon-google {
+  position: relative;
+  right: 27px;
+  top: 1px;
+}
