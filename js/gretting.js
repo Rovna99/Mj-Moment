@@ -3,7 +3,8 @@ const form = document.querySelector(".js-form"),
   greeting = document.querySelector(".js-greetings");
 
 const USER_LS = "currentUser",
-  SHOWING_CN = "showing";
+  SHOWING_CN = "showing",
+  SHOWING_NC = "showing2";
 
 function saveName(text) {
   localStorage.setItem(USER_LS, text);
@@ -14,6 +15,7 @@ function handleSubmit(event) {
   const currentValue = input.value;
   paintGreeting(currentValue);
   saveName(currentValue);
+  loadIndex();
 }
 
 function askForName() {

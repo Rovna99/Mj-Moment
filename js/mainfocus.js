@@ -1,10 +1,17 @@
 const focusForm = document.querySelector(".edit-focus"),
   focusInput = focusForm.querySelector("input"),
-  focusList = document.querySelector(".your-list");
+  focusList = document.querySelector(".your-list"),
+  Cheering = document.querySelector(".cheering");
 
 const FOCUS_LS = "focus";
 
 let foCus = [];
+
+function refocus() {
+  focusForm.classList.add(SHOWING_CN);
+  focusList.classList.add(SHOWING_NC);
+  Cheering.classList.remove(SHOWING_NC);
+}
 
 function deletefocus(event) {
   const btn = event.target;
@@ -15,6 +22,7 @@ function deletefocus(event) {
   });
   foCus = cleanfocus;
   saveFocus();
+  refocus();
 }
 
 function saveFocus() {
@@ -41,11 +49,20 @@ function paintfocus(text) {
   saveFocus();
 }
 
+function mainfocus() {
+  if (focus !== null) {
+    focusForm.classList.remove(SHOWING_CN);
+    focusList.classList.remove(SHOWING_NC);
+    Cheering.classList.add(SHOWING_NC);
+  }
+}
+
 function handleSubmit(event) {
   event.preventDefault();
   const currentValue = focusInput.value;
   paintfocus(currentValue);
   focusInput.value = "";
+  mainfocus();
 }
 
 function loadfocus() {

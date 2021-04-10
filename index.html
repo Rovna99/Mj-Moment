@@ -32,7 +32,9 @@
               <i class="fas fa-music"></i>
             </div>
             <div class="part-top-sitebar">sitebar</div>
-            <div class="part-top-weather">weather</div>
+            <div class="part-top-weather">
+              <span class="js-weather"></span>
+            </div>
           </div>
         </div>
       </div>
@@ -42,7 +44,7 @@
           <h1>00:00</h1>
         </div>
         <form class="js-form form">
-          <h3>What is your name?</h3>
+          <h3 class="Qname">What is your name?</h3>
           <input type="text" class="wyname" />
         </form>
         <h4 class="js-greetings greetings"></h4>
@@ -50,10 +52,13 @@
       <div class="region center-below">
         <div class="main-focus">
           <form class="edit-focus">
-            <h3>What is your main focus for today?</h3>
+            <h3 class="write-focus">What is your main focus for today?</h3>
             <input type="text" />
           </form>
-          <ul class="your-list"></ul>
+          <div class="cheer">
+            <h2 class="cheering">You Can Do It!</h2>
+            <ul class="your-list"></ul>
+          </div>
         </div>
       </div>
       <div class="region bottom">
@@ -67,6 +72,7 @@
     <script src="js/gretting.js"></script>
     <script src="js/mainfocus.js"></script>
     <script src="js/weather.js"></script>
+    <script src="js/start.js"></script>
     <script
       src="https://kit.fontawesome.com/6478f529f2.js"
       crossorigin="anonymous"

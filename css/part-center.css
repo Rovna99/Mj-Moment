@@ -4,6 +4,12 @@
   justify-content: center;
   flex: 1 1 auto;
 }
+.Qname,
+.greetings {
+  margin-top: 5px;
+  font-size: 54px;
+}
+
 .wyname {
   border: 0;
   text-align: center;
@@ -20,6 +26,7 @@
   align-items: center;
   font-size: 165px;
   font-weight: 500px;
+  animation: fadeIn 0.8s ease-in-out;
 }
 
 .center-below {
@@ -53,6 +60,7 @@
   line-height: 1.2;
   font-weight: 500;
   font-size: 1.17em;
+  color: white;
 }
 
 #your-list {
@@ -69,17 +77,43 @@
 }
 
 .form,
-.greetings {
+.greetings,
+.edit-focus,
+.cheering {
   display: none;
 }
-
-.showing {
-  display: block;
+.your-list li {
+  animation: fadeIn 0.8s ease-in-out;
 }
-
 .showing {
   display: table-cell;
   text-align: center;
-  margin-top: 5px;
-  font-size: 54px;
+  animation: fadeIn 0.8s ease-in-out;
+}
+
+.showing2 {
+  display: flex;
+  animation: fadeIn 0.8s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.cheering {
+  justify-content: center;
+  align-items: center;
+  margin-top: 65px;
+  margin-right: 15px;
+}
+
+.your-list {
+  justify-content: center;
+  align-items: center;
+  margin-right: 15px;
 }
