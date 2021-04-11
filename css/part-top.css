@@ -91,7 +91,7 @@
 .header__weather--location {
   font-size: 15px;
   position: relative;
-  left: 20px;
+  right: 10px;
 }
 
 .part-top {

@@ -4,9 +4,10 @@ const IMG_NUMBER = 4;
 
 function paintImage(imgNumber) {
   const image = new Image();
-  image.src = `images/${imgNumber + 1}.JPG`;
+  image.src = `images/${imgNumber + 1}.jpg`;
   image.classList.add("bgImage");
-  body.prepend(image);
+  body.appendChild(image);
+  //loadend
 }
 
 function genRandom() {
