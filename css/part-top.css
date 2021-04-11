@@ -89,9 +89,9 @@
 }
 
 .header__weather--location {
-  font-size: 15px;
   position: relative;
   left: 20px;
+  font-size: 15px;
 }
 
 .header__weather {
