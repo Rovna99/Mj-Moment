@@ -70,14 +70,30 @@
   box-sizing: inherit;
   width: 60px;
   height: 30px;
-  background-color: rgb(144, 195, 230);
+  background-color: #6deea7;
   border-radius: 20px;
   justify-content: center;
   align-items: center;
+  font-weight: 600;
 }
 
 .icon-google {
   position: relative;
   right: 27px;
   top: 1px;
+}
+
+.header__weather--ico,
+.header__weather--temperature {
+  font-size: 30px;
+}
+
+.header__weather--location {
+  font-size: 15px;
+  position: relative;
+  left: 20px;
+}
+
+.part-top {
+  animation: fadeIn 0.8s ease-in-out;
 }

@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="kr">
   <head>
+    <link rel="stylesheet" href="css/weather-icons.min.css" />
     <link rel="stylesheet" href="css/style.css" />
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -28,12 +29,14 @@
             <img src="images/wgicon.png" class="icon-google part-top-search" />
           </div>
           <div class="part-top-right">
-            <div class="part-top-music">
-              <i class="fas fa-music"></i>
-            </div>
-            <div class="part-top-sitebar">sitebar</div>
             <div class="part-top-weather">
-              <span class="js-weather"></span>
+              <div class="header__weather">
+                <div class="header__weather--container">
+                  <i class="header__weather--ico wi"></i>
+                  <span class="header__weather--temperature"></span>
+                </div>
+                <div class="header__weather--location"></div>
+              </div>
             </div>
           </div>
         </div>
@@ -62,9 +65,23 @@
         </div>
       </div>
       <div class="region bottom">
-        <div class=""></div>
-        <div class=""></div>
-        <div class=""></div>
+        <div class="bottom-left">
+          <i class="fas fa-cog"></i>
+        </div>
+        <div class="bottom-center">
+          <div class="bottom-center-quote">
+            <blockquote class="bottom--text" cite="">
+              <p class="bottom--quote"></p>
+              <cite class="bottom--author"></cite>
+            </blockquote>
+          </div>
+        </div>
+        <div class="bottom-right">
+          <div class="bottom-music">
+            <i class="fas fa-music"></i>
+          </div>
+          <div class="bottom-sitebar">Site</div>
+        </div>
       </div>
     </div>
     <script src="js/clock.js"></script>
@@ -73,6 +90,9 @@
     <script src="js/mainfocus.js"></script>
     <script src="js/weather.js"></script>
     <script src="js/start.js"></script>
+    <script src="js/quote.js"></script>
+    <script src="js/quote.js"></script>
+
     <script
       src="https://kit.fontawesome.com/6478f529f2.js"
       crossorigin="anonymous"
