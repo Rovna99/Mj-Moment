@@ -59,8 +59,8 @@ function mainfocus() {
 
 function handleSubmit(event) {
   event.preventDefault();
-  const currentValue = focusInput.value;
-  paintfocus(currentValue);
+  const currentvalue = focusInput.value;
+  paintfocus(currentvalue);
   focusInput.value = "";
   mainfocus();
 }

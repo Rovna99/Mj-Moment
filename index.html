@@ -14,19 +14,53 @@
         <div class="part-top">
           <div class="part-top-left">
             <div class="part-top-menu">
-              <span class="menubar">Todo</span>
+              <div class="bars show__status-bar">
+                <i class="fas fa-bars fa-2x" aria-hidden=""></i>
+              </div>
+              <div class="todo">
+                <div class="todo__status-bar balance">
+                  <span class="todo__status-bar__title">TASKS</span>
+                  <button>
+                    <i class="fas fa-angle-left fa-2x" aria-hidden=""></i>
+                  </button>
+                </div>
+                <form id="js-form__todo" class="toDoForm balance">
+                  <input
+                    id="js-input__todo"
+                    type="text"
+                    placeholder="Add task"
+                  />
+                </form>
+                <div class="toDo__title balance">
+                  <h3>Pending</h3>
+                  <ul id="js-pending" class="pending"></ul>
+                </div>
+              </div>
             </div>
-            <i class="fas fa-search"></i>
+            <div class="top-icon">
+              <i class="fas fa-search"></i>
+            </div>
             <form
               action="https://www.google.com/search?"
               method="GET"
               class="part-top-search"
             >
               <div class="search-google">
-                <input name="q" id="search-input" type="text" />
+                <input
+                  name="q"
+                  class="search-input"
+                  type="text"
+                  required
+                  placeholder=""
+                />
               </div>
             </form>
-            <img src="images/wgicon.png" class="icon-google part-top-search" />
+            <div class="top-icon">
+              <img
+                src="images/wgicon.png"
+                class="icon-google part-top-search"
+              />
+            </div>
           </div>
           <div class="part-top-right">
             <div class="part-top-weather">
@@ -56,7 +90,7 @@
         <div class="main-focus">
           <form class="edit-focus">
             <h3 class="write-focus">What is your main focus for today?</h3>
-            <input type="text" />
+            <input type="text" required placeholder="" />
           </form>
           <div class="cheer">
             <h2 class="cheering">You Can Do It!</h2>
@@ -92,7 +126,8 @@
     <script src="js/start.js"></script>
     <script src="js/quote.js"></script>
     <script src="js/quote.js"></script>
-
+    <script src="js/todo.js"></script>
+    <script src="js/showtodo.js"></script>
     <script
       src="https://kit.fontawesome.com/6478f529f2.js"
       crossorigin="anonymous"
