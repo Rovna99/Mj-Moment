@@ -31,15 +31,12 @@ function paintToDo(text) {
   delBtn.innerText = "✖";
   delBtn.addEventListener("click", deleteToDo);
   finishBtn.innerText = "✔";
-  finishBtn.addEventListener("click", () => {
-    span.classList.toggle("Tdeco");
-  });
+  finishBtn.addEventListener("click", deleteToDo);
   span.innerText = text;
   li.appendChild(span);
-  li.appendChild(finishBtn);
   li.appendChild(delBtn);
+  li.appendChild(finishBtn);
   li.id = newId;
-  span.classList.add(spanId);
   toDoList.appendChild(li);
   const toDoObj = {
     text: text,
