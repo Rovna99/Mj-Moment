@@ -58,10 +58,10 @@
 }
 
 .sitebar-bubble1 {
+  display: none;
   width: 12px;
   height: 8px;
   background-color: #fff;
-  display: flex;
   position: absolute;
   bottom: 49px;
   border-radius: 5px;
@@ -69,17 +69,17 @@
 }
 
 .sitebar-bubble2 {
+  display: none;
   width: 25px;
   height: 10px;
   background-color: #fff;
-  display: flex;
   position: absolute;
   bottom: 63px;
   border-radius: 15px;
 }
 
 .sitebar-site {
-  display: flex;
+  display: none;
   flex-direction: column;
   justify-content: center;
   text-align: start;
@@ -95,14 +95,30 @@
 
 .sitebar-siteName {
   margin: 2px 0 2px 13px;
-}
-
-.site-link {
   opacity: 0.7;
 }
+
+.sitebar-siteName:hover {
+  opacity: 1;
+}
+
 .img-nomad {
   width: 15px;
   height: 13px;
+}
+
+@keyframes sSite {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.show_sitebar {
+  display: flex;
+  animation: 0.7s sSite ease-in-out;
 }
 
 .icon-chrome-tab,
@@ -117,7 +133,6 @@
 }
 
 .icon-chrome-tab {
-  opacity: 0.7;
   width: 15px;
   height: 15px;
 }
