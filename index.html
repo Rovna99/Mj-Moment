@@ -101,7 +101,24 @@
       </div>
       <div class="region bottom">
         <div class="bottom-left">
-          <i class="fas fa-cog"></i>
+          <div class="show-audio">
+            <audio id="audioContainer">
+              <source id="audioSource" src="" />
+              Your browser does not support the audio format.
+            </audio>
+            <div class="js-onOffWrap">
+              <div class="js-playBtn playbtn">
+                <i class="far fa-play-circle"></i>
+              </div>
+              <div class="js-stopBtn playbtn">
+                <i class="far fa-stop-circle"></i>
+              </div>
+              <div class="js-audioNextBtn playbtn">
+                <i class="fas fa-forward"></i>
+              </div>
+            </div>
+          </div>
+          <i onclick="showPlaybar()" class="fas fa-music"></i>
         </div>
         <div class="bottom-center">
           <div class="bottom-center-quote">
@@ -157,7 +174,7 @@
     <script src="js/quote.js"></script>
     <script src="js/todo.js"></script>
     <script src="js/showtodo.js"></script>
-    <script src="js/sitemap.js"></script>
+    <script src="js/bottom.js"></script>
     <script
       src="https://kit.fontawesome.com/6478f529f2.js"
       crossorigin="anonymous"
